@@ -12,7 +12,7 @@ video = '';
 // Vimeo
 if(document.location.href.match(/vimeo.com\/(\d+)/)) {
   var id = document.location.href.match(/vimeo.com\/(\d+)/)[1];
-  video = '<iframe src="http://player.vimeo.com/video/'+id+'" width="300" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://beli.io/import_video?engine=vimeo&id='+id+'"  target="beli">Importer</a></p>';
+  video = '<iframe src="http://player.vimeo.com/video/'+id+'" width="300" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://beli.io/import_video?engine=vimeo&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
   html += video;
 }
 // Youtube
