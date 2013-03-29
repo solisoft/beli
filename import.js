@@ -12,19 +12,22 @@ video = '';
 // Vimeo
 if(document.location.href.match(/vimeo.com\/(\d+)/)) {
   var id = document.location.href.match(/vimeo.com\/(\d+)/)[1];
-  video = '<iframe src="http://player.vimeo.com/video/'+id+'" width="300" height="150" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://beli.io/import_video?engine=vimeo&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
+  video = '<iframe src="http://player.vimeo.com/video/'+id+'" width="300" height="150" frameborder="0" webkitAllowFullScreen
+mozallowfullscreen allowFullScreen></iframe> <p><a href="http://dev.24s46.com/import_video?engine=vimeo&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
   html += video;
 }
 // Youtube
 if(document.location.href.match(/www.youtube.com\/watch\?v=([\d\w]+)/)) {
   var id = document.location.href.match(/www.youtube.com\/watch\?v=([\d\w]+)/)[1];
-  video = '<iframe width="300" height="150" src="http://www.youtube.com/embed/'+id+'" frameborder="0" allowfullscreen></iframe> <p><a href="http://beli.io/import_video?engine=youtube&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
+  video = '<iframe width="300" height="150" src="http://www.youtube.com/embed/'+id+'" frameborder="0" allowfullscreen></iframe>
+<p><a href="http://dev.24s46.com/import_video?engine=youtube&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
   html += video;
 }
 // DailyMotion
 if(document.location.href.match(/\/\/www.dailymotion.com\/video\/([\d\w]+)_/)) {
   var id = document.location.href.match(/\/\/www.dailymotion.com\/video\/([\d\w]+)_/)[1];
-  video = '<iframe frameborder="0" width="480" height="270" src="http://www.dailymotion.com/embed/video/'+id+'"></iframe> <p><a href="http://beli.io/import_video?engine=dailymotion&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
+  video = '<iframe frameborder="0" width="480" height="270" src="http://www.dailymotion.com/embed/video/'+id+'"></iframe> <p><a
+href="http://dev.24s46.com/import_video?engine=dailymotion&id='+id+'&url='+encodeURIComponent(document.location.href)+'"  target="beli">Importer</a></p>';
   html += video;
 }
 
