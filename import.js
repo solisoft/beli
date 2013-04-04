@@ -36,7 +36,7 @@ if(video == "") {
   for (var i = 0; i < imgs.length; ++i) {
     var item = imgs[i];
     var src = item.getAttribute("src");
-    var text = item.getAttribute("title");
+    var text = item.getAttribute("title").replace("/","-");
     if(text == null) text = "";
     if(src && src.indexOf("http") == -1) src = document.location.origin +"/"+ src;
     if(item.width > 100 && item.height > 100 && y < max) {
