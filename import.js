@@ -38,7 +38,7 @@ if(video == "") {
     var src = item.getAttribute("src");
     var text = item.getAttribute("title");
     if(text == null) text = "";
-    text = text.replace("/","-");
+    text = text.replace("/","-").replace(".", " ");
     if(src && src.indexOf("http") == -1) src = document.location.origin +"/"+ src;
     if(item.width > 100 && item.height > 100 && y < max) {
       html += "<div style='display:inline-block; margin: 10px;width:150px; height: 150px; overflow: hidden;'><a href='http://dev.24s46.com/import/"+encodeURIComponent(src)+"/"+encodeURIComponent(document.location.href)+"/"+encodeURIComponent(text)+"' alt='"+text.replace("'", "\\'")+"' title='"+text.replace("'", "\\'")+"' target='beli'><img src='" + src + "' width='150'></a></div>";
