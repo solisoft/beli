@@ -5,7 +5,7 @@ e.setAttribute("id", "beli_imgs");
 
 document.body.appendChild(e);
 
-var html = "<h1 style='text-align:center; color: orange; font-size: 20px;'>Beli Import</h1><div style='position:fixed; right:0; top: 0; padding: 10px;'><a href='javascript:document.getElementById(\"beli_imgs\").remove()'>Cancel</a></div>";
+var html = "<div style='width:600px;margin:0 auto;background:#eee;'><h1 style='text-align:center;font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><div style='float:right;padding: 10px;'><a href='javascript:document.getElementById(\"beli_imgs\").remove()'>Cancel</a></div>";
 html += "<div align='center' style='position:fixed; top:0; left: 0; right: 0; bottom:0; margin-top: 40px;'>";
 
 video = '';
