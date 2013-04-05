@@ -48,7 +48,7 @@ if(video == "") {
     text = text.replace("/","-").replace(".", " ");
     if(src && src.indexOf("http") == -1) src = document.location.origin +"/"+ src;
     if(item.width > 100 && item.height > 100 && y < max) {
-      html += "<div style='float:left; margin: 10px;width:150px; height: 150px; overflow: hidden;'><a href='http://dev.24s46.com/import/"+encodeURIComponent(src)+"/"+encodeURIComponent(document.location.href)+"/"+encodeURIComponent(text)+"' alt='"+text.replace("'", "\\'")+"' title='"+text.replace("'", "\\'")+"' target='beli'><img src='" + src + "' width='150' style='box-shadow: 0 0 10px #000;border-radius: 4px;'></a></div>";
+      html += "<div style='float:left; margin: 10px;width:150px; height: 90px; overflow: hidden;'><a href='http://dev.24s46.com/import/"+encodeURIComponent(src)+"/"+encodeURIComponent(document.location.href)+"/"+encodeURIComponent(text)+"' alt='"+text.replace("'", "\\'")+"' title='"+text.replace("'", "\\'")+"' target='beli'><img src='" + src + "' width='150' style='box-shadow: 0 0 10px #000;border-radius: 4px;'></a></div>";
       y++;
     }
   }
