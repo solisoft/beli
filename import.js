@@ -6,7 +6,7 @@ e.setAttribute("id", "beli_imgs");
 document.body.appendChild(e);
 
 var html = "<div style='width:600px;margin:0 auto;background:#eee;'><div style='float:right;padding: 10px;'><a href='javascript:document.getElementById(\"beli_imgs\").remove()'>Cancel</a></div><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
-html += "<div align='center' style='position:fixed; top:0; left: 0; right: 0; bottom:0; margin-top: 40px;'>";
+html += "<div align='center' style=''>";
 
 video = '';
 // Vimeo
