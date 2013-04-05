@@ -1,6 +1,6 @@
 // Ok First add a blank layout
 var e = document.createElement("div");
-e.setAttribute("style", 'position:fixed;background: #fff;background: rgba(255,255,255,0.9); z-index: 100000;top:0;left:0;right:0;bottom:0;');
+e.setAttribute("style", 'position:fixed;background: #fff;background: rgba(255,255,255,0.8); z-index: 100000;top:0;left:0;right:0;bottom:0;');
 e.setAttribute("id", "beli_imgs");
 
 document.body.appendChild(e);
@@ -8,11 +8,11 @@ document.body.appendChild(e);
 document.onclick = function(event) {
   var el = event.target;
   if (el.id == "beli_imgs") {
-    alert("div#beli_imgs clicked");
+    el.remove();
   }
 };
 
-var html = "<div style='padding:10px;width:600px;margin:0 auto;background:#efefef;'><div style='float:right;padding: 10px;'><a href='javascript:document.getElementById(\"beli_imgs\").remove()'>Cancel</a></div><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
+var html = "<div style='padding:10px;width:600px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
 html += "<div align='center' style=''>";
 
 video = '';
