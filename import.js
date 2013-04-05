@@ -12,7 +12,7 @@ document.onclick = function(event) {
   }
 };
 
-var html = "<div style='padding:10px;width:650px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
+var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
 html += "<div align='center' style=''>";
 
 video = '';
