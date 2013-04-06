@@ -46,7 +46,7 @@ if(video == "") {
     var text = item.getAttribute("title");
     if(text == null) text = "";
     text = text.replace("/","-").replace(".", " ");
-    if(src && src[0] == "/") src = document.location.protocol + src;
+    if(src && src[0] == "/" && src[1] == "/") src = document.location.protocol + src;
     if(src && src.indexOf("http") == -1) src = document.location.origin +"/"+ src;
     if(src && src.indexOf("data:image") == -1) {
       if(item.width > 214 && item.height > 100 && y < max) {
