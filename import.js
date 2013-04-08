@@ -12,7 +12,7 @@ document.onclick = function(event) {
   }
 };
 
-var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p>";
+var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><p>Sont sélectionné les images d'au moins 214 pixels de large et 100 pixels de haut.</p>";
 html += "<div align='center' style=''>";
 
 video = '';
@@ -49,7 +49,7 @@ if(video == "") {
     if(src && src[0] == "/" && src[1] == "/") src = document.location.protocol + src;
     if(src && src.indexOf("http") == -1) src = document.location.origin +"/"+ src;
     if(src && src.indexOf("data:image") == -1) {
-      if(item.width > 214 && item.height > 100 && y < max) {
+      if(item.width >= 214 && item.height >= 100 && y < max) {
         html += "<div style='float:left; margin: 10px;width:150px; height: 90px; overflow: hidden;'><a href='http://dev.24s46.com/import/"+encodeURIComponent(src)+"/"+encodeURIComponent(document.location.href)+"/"+encodeURIComponent(text)+"' alt='"+text.replace("'", "\\'")+"' title='"+text.replace("'", "\\'")+"' target='beli'><img src='" + src + "' width='150' style='box-shadow: 0 0 10px #000;border-radius: 4px;'></a></div>";
         y++;
       }
