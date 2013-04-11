@@ -1,6 +1,6 @@
 // Ok First add a blank layout
 var e = document.createElement("div");
-e.setAttribute("style", 'position:fixed;background: #fff;background: rgba(255,255,255,0.8); z-index: 100000;top:0;left:0;right:0;bottom:0;');
+e.setAttribute("style", 'position:fixed;background: #fff;background: rgba(255,255,255,0.8); z-index: 10000000;top:0;left:0;right:0;bottom:0;');
 e.setAttribute("id", "beli_imgs");
 
 document.body.appendChild(e);
@@ -12,7 +12,7 @@ document.onclick = function(event) {
   }
 };
 
-var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;z-index:100000'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><p>Sont sélectionnées les images d'au moins 214 pixels de large et 100 pixels de haut.</p>";
+var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><p>Sont sélectionnées les images d'au moins 214 pixels de large et 100 pixels de haut.</p>";
 html += "<div align='center' style=''>";
 
 video = '';
