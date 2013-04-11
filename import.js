@@ -12,7 +12,7 @@ document.onclick = function(event) {
   }
 };
 
-var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><p>Sont sélectionnées les images d'au moins 214 pixels de large et 100 pixels de haut.</p>";
+var html = "<div style='padding:10px;width:700px;margin:0 auto;background:#efefef;z-index:100000'><h1 style='font-size: 20px;'>Import 24s46</h1><p>Cliquez sur l'image que vous souhaitez publier</p><p>Sont sélectionnées les images d'au moins 214 pixels de large et 100 pixels de haut.</p>";
 html += "<div align='center' style=''>";
 
 video = '';
